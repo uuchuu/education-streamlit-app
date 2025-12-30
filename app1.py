@@ -33,7 +33,7 @@ def load_data():
     """从处理后的CSV文件加载数据"""
     try:
         # 读取CSV文件
-        df = pd.read_csv('处理后的数据.csv', encoding='utf-8')
+        df = pd.read_csv('prosessed_data.csv', encoding='utf-8')
 
         # 如果CSV文件有BOM头（如你的文件开头有\ufeff），需要处理
         df.columns = df.columns.str.strip()
